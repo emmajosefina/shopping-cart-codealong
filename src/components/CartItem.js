@@ -13,7 +13,7 @@ export const CartItem = ({ product }) => {
       </div>
 
       <span className="actions">
-        <button type="button" onClick={() => { }}>-</button>
+        <button type="button" onClick={() => dispatch(cart.actions.removeItem(product))}>-</button>
         <button type="button" onClick={() => dispatch(cart.actions.addItem(product))}>+</button>
       </span>
     </li>
